@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SpeedBoard | Frontend Performance Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">SpeedBoard</a>
+      <button class="menu-btn" id="menuBtn">Menu</button>
+      <nav id="siteNav">
+        <a href="#metrics">Metrics</a><a href="#articles">Articles</a><a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">WEEK 4 PERFORMANCE LAB</p>
+        <h1>Build a faster front-end experience.</h1>
+        <p class="lead">A demonstration page used to identify and fix common browser performance bottlenecks.</p>
+        <a class="button" href="#articles">Explore optimizations</a>
+      </div>
+    </section>
+    <section id="metrics" class="metrics container">
+      <div><strong>6</strong><span>Test articles</span></div>
+      <div><strong>0</strong><span>Frameworks</span></div>
+      <div><strong>100%</strong><span>Responsive</span></div>
+    </section>
+    <section id="articles" class="container section">
+      <div class="section-heading"><p class="eyebrow">CASE STUDIES</p><h2>Performance-focused patterns</h2></div>
+      <div class="grid">
+        <article class="card"><img src="assets/article-1.svg" alt="Fast rendering illustration"><div class="card-body"><h3>Fast Rendering</h3><p>Reduce blocking work and keep the first screen responsive.</p></div></article>
+        <article class="card"><img src="assets/article-2.svg" alt="Efficient images illustration"><div class="card-body"><h3>Efficient Images</h3><p>Load visual assets only when they are needed.</p></div></article>
+        <article class="card"><img src="assets/article-3.svg" alt="Lean JavaScript illustration"><div class="card-body"><h3>Lean JavaScript</h3><p>Ship only the behavior the page actually uses.</p></div></article>
+        <article class="card"><img src="assets/article-4.svg" alt="Clean CSS illustration"><div class="card-body"><h3>Clean CSS</h3><p>Use a smaller, focused stylesheet for faster parsing.</p></div></article>
+        <article class="card"><img src="assets/article-5.svg" alt="Smart loading illustration"><div class="card-body"><h3>Smart Loading</h3><p>Defer non-critical scripts and avoid unnecessary requests.</p></div></article>
+        <article class="card"><img src="assets/article-6.svg" alt="Measured results illustration"><div class="card-body"><h3>Measured Results</h3><p>Use repeatable metrics to verify every optimization.</p></div></article>
+      </div>
+    </section>
+    <section id="about" class="about"><div class="container"><h2>About this lab</h2><p>This page is intentionally simple so performance changes can be isolated, measured, and documented.</p></div></section>
+  </main>
+  <footer><div class="container">© 2026 SpeedBoard Performance Lab</div></footer>
+  <script src="script.js"></script>
+</body>
+</html>

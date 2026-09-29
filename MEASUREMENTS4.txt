@@ -1,0 +1,16 @@
+# Static audit generated for Week 4
+Baseline total bytes: 12163
+Optimized total bytes: 10990
+Total byte reduction: 9.6%
+Baseline CSS bytes: 2349
+Optimized CSS bytes: 2087
+CSS reduction: 11.2%
+Baseline JS bytes: 406
+Optimized JS bytes: 218
+JS reduction: 46.3%
+Baseline image bytes: 6310
+Optimized image bytes: 4858
+Image asset reduction: 23.0%
+Baseline HTML tag count: 140
+Optimized HTML tag count: 142
+Lazy-loaded below-fold images: 5/6
