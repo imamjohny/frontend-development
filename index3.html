@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AccessHub accessibility-focused information portal demonstration.">
+  <title>AccessHub | Accessible Information Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="AccessHub home">AccessHub</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle navigation menu</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#articles">Articles</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Inclusive information design</p>
+          <h1 id="hero-title">Information that works for everyone.</h1>
+          <p class="hero-text">AccessHub is a responsive information portal designed to demonstrate practical accessibility and user-experience improvements.</p>
+          <a class="button" href="#articles">Explore articles</a>
+        </div>
+        <aside class="access-card" aria-labelledby="access-title">
+          <h2 id="access-title">Accessibility features</h2>
+          <ul>
+            <li>Keyboard-friendly navigation</li>
+            <li>Visible focus indicators</li>
+            <li>Semantic page structure</li>
+            <li>Reduced-motion support</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="articles" class="section" aria-labelledby="articles-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Latest reading</p>
+          <h2 id="articles-title">Featured articles</h2>
+          <p>Clear content hierarchy and descriptive controls make information easier to find and understand.</p>
+        </div>
+
+        <div class="article-grid">
+          <article class="article-card">
+            <p class="tag">Accessibility</p>
+            <h3><a href="#article-1">Designing for keyboard users</a></h3>
+            <p>Practical patterns for focus order, skip links, and meaningful interactive controls.</p>
+            <a class="read-link" href="#article-1" aria-label="Read Designing for keyboard users article">Read article <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="article-card">
+            <p class="tag">UX</p>
+            <h3><a href="#article-2">Readable content on every screen</a></h3>
+            <p>Use spacing, headings, responsive layouts, and sufficient contrast to reduce cognitive load.</p>
+            <a class="read-link" href="#article-2" aria-label="Read Readable content on every screen article">Read article <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="article-card">
+            <p class="tag">Inclusive design</p>
+            <h3><a href="#article-3">Better forms and labels</a></h3>
+            <p>Make form controls understandable with labels, instructions, states, and useful error messages.</p>
+            <a class="read-link" href="#article-3" aria-label="Read Better forms and labels article">Read article <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="section section-alt" aria-labelledby="resources-title">
+      <div class="container two-column">
+        <div>
+          <p class="eyebrow">Useful tools</p>
+          <h2 id="resources-title">Accessibility resources</h2>
+          <p>These links are presented with descriptive text so their purpose is clear to screen-reader and keyboard users.</p>
+        </div>
+        <ul class="resource-list">
+          <li><a href="https://www.w3.org/WAI/" target="_blank" rel="noopener noreferrer">W3C Web Accessibility Initiative <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://www.w3.org/TR/WCAG22/" target="_blank" rel="noopener noreferrer">WCAG 2.2 Guidelines <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://wave.webaim.org/" target="_blank" rel="noopener noreferrer">WAVE Web Accessibility Evaluation Tool <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container about-box">
+        <div>
+          <p class="eyebrow">About this project</p>
+          <h2 id="about-title">Accessibility-first UX</h2>
+          <p>This interface demonstrates semantic HTML, ARIA where appropriate, keyboard navigation, visible focus states, responsive design, readable contrast, and reduced-motion support.</p>
+        </div>
+        <button class="button secondary" type="button" id="announce-button">Test accessible announcement</button>
+      </div>
+      <p id="live-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 AccessHub. Accessibility demonstration project.</p>
+      <a href="#main-content">Back to main content</a>
+    </div>
+  </footer>
+
+  <noscript>
+    <div class="noscript-message">JavaScript is disabled. All primary content remains available, and navigation links continue to work.</div>
+  </noscript>
+  <script src="script.js"></script>
+</body>
+</html>
