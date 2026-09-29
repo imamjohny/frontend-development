@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="InsightBoard interactive sales and performance dashboard.">
+<title>InsightBoard | Sales Dashboard</title>
+<link rel="preload" href="styles.min.css" as="style">
+<link rel="stylesheet" href="styles.min.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="#" aria-label="InsightBoard home"><span aria-hidden="true">◆</span> InsightBoard</a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mainNav">Menu</button>
+    <nav id="mainNav" aria-label="Primary navigation">
+      <a href="#overview">Overview</a><a href="#analytics">Analytics</a><a href="#orders">Orders</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="overview">
+  <div class="container hero-grid">
+    <div><p class="eyebrow">FINAL PROJECT · MINI WEB APPLICATION</p>
+    <h1>Turn static data into useful decisions.</h1>
+    <p class="hero-copy">A responsive, accessible dashboard that loads structured JSON data and transforms it into interactive summaries, charts, and a sortable order table.</p>
+    <a class="button" href="#analytics">View analytics <span aria-hidden="true">↓</span></a></div>
+    <aside class="hero-note" aria-label="Application highlights"><strong>Built with</strong><ul><li>Semantic HTML & ARIA</li><li>Vanilla JavaScript + JSON</li><li>Responsive CSS</li><li>Performance-first loading</li></ul></aside>
+  </div>
+</section>
+
+<section class="container metrics" aria-labelledby="metricsTitle">
+<h2 id="metricsTitle" class="sr-only">Key metrics</h2>
+<div class="metric"><span>Revenue</span><strong id="revenueMetric">Loading…</strong><small>First half performance</small></div>
+<div class="metric"><span>Orders</span><strong id="ordersMetric">Loading…</strong><small>Total processed</small></div>
+<div class="metric"><span>Customers</span><strong id="customersMetric">Loading…</strong><small>Active accounts</small></div>
+<div class="metric"><span>Conversion</span><strong id="conversionMetric">Loading…</strong><small>Current rate</small></div>
+</section>
+
+<section class="container section" id="analytics" aria-labelledby="analyticsTitle">
+<div class="section-heading"><div><p class="eyebrow">ANALYTICS</p><h2 id="analyticsTitle">Performance overview</h2></div>
+<p id="status" class="status" role="status" aria-live="polite">Loading dashboard data…</p></div>
+<div class="analytics-grid">
+<article class="panel chart-panel" aria-labelledby="revenueChartTitle">
+<div class="panel-head"><h3 id="revenueChartTitle">Monthly revenue</h3><span class="badge">USD</span></div>
+<div class="bar-chart" id="revenueChart" role="img" aria-label="Monthly revenue bar chart"></div>
+</article>
+<article class="panel" aria-labelledby="categoryTitle"><div class="panel-head"><h3 id="categoryTitle">Revenue by category</h3></div><div id="categoryList" class="category-list"></div></article>
+</div>
+</section>
+
+<section class="container section" id="orders" aria-labelledby="ordersTitle">
+<div class="section-heading"><div><p class="eyebrow">DATA TABLE</p><h2 id="ordersTitle">Recent orders</h2></div></div>
+<div class="toolbar">
+<label for="categoryFilter">Filter category
+<select id="categoryFilter"><option value="All">All categories</option><option>Software</option><option>Services</option><option>Hardware</option><option>Support</option></select></label>
+<label for="statusFilter">Filter status
+<select id="statusFilter"><option value="All">All statuses</option><option>Completed</option><option>Processing</option><option>Pending</option></select></label>
+<label for="searchInput">Search
+<input id="searchInput" type="search" placeholder="Customer or order ID" autocomplete="off"></label>
+<button id="resetFilters" class="secondary" type="button">Reset filters</button>
+</div>
+<div class="table-wrap">
+<table><caption class="sr-only">Recent customer orders</caption><thead><tr>
+<th scope="col"><button class="sort" data-key="id" type="button">Order <span aria-hidden="true">↕</span></button></th>
+<th scope="col"><button class="sort" data-key="customer" type="button">Customer <span aria-hidden="true">↕</span></button></th>
+<th scope="col"><button class="sort" data-key="category" type="button">Category <span aria-hidden="true">↕</span></button></th>
+<th scope="col"><button class="sort" data-key="status" type="button">Status <span aria-hidden="true">↕</span></button></th>
+<th scope="col"><button class="sort" data-key="amount" type="button">Amount <span aria-hidden="true">↕</span></button></th>
+<th scope="col">Date</th>
+</tr></thead><tbody id="ordersBody"></tbody></table>
+</div>
+<p id="tableSummary" class="table-summary"></p>
+</section>
+
+<section class="container section lower-grid">
+<article class="panel"><p class="eyebrow">ACCESSIBILITY</p><h2>Designed for more users</h2><p>Keyboard-friendly controls, visible focus indicators, semantic landmarks, descriptive labels, live announcements, and a reduced-motion preference are built into the interface.</p></article>
+<article class="panel"><p class="eyebrow">PERFORMANCE</p><h2>Lightweight by design</h2><p>The application uses one small JSON data source, deferred JavaScript, minified CSS, no external framework, and efficient DOM updates.</p></article>
+</section>
+</main>
+<footer><div class="container">© 2026 InsightBoard · Week 5 Mini Web Application</div></footer>
+<noscript><div class="noscript">JavaScript is required for dynamic dashboard data, charts, filters, and sorting. The application source includes the static JSON data used by these features.</div></noscript>
+<script src="app.min.js" defer></script>
+</body>
+</html>

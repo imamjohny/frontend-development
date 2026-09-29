@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "title": "InsightBoard",
+    "subtitle": "Interactive Sales & Performance Dashboard",
+    "currency": "USD"
+  },
+  "summary": {
+    "revenue": 128450,
+    "orders": 1842,
+    "customers": 963,
+    "conversion": 4.8
+  },
+  "months": [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun"
+  ],
+  "revenue": [
+    16800,
+    19200,
+    21100,
+    19850,
+    23700,
+    27800
+  ],
+  "categories": [
+    {
+      "name": "Software",
+      "value": 45200,
+      "share": 35.2
+    },
+    {
+      "name": "Services",
+      "value": 33750,
+      "share": 26.3
+    },
+    {
+      "name": "Hardware",
+      "value": 28900,
+      "share": 22.5
+    },
+    {
+      "name": "Support",
+      "value": 20600,
+      "share": 16.0
+    }
+  ],
+  "records": [
+    {
+      "id": "ORD-1048",
+      "customer": "Aarav Digital",
+      "category": "Software",
+      "status": "Completed",
+      "amount": 12800,
+      "date": "2026-06-22"
+    },
+    {
+      "id": "ORD-1047",
+      "customer": "Nova Retail",
+      "category": "Services",
+      "status": "Completed",
+      "amount": 9650,
+      "date": "2026-06-20"
+    },
+    {
+      "id": "ORD-1046",
+      "customer": "Greenfield Labs",
+      "category": "Hardware",
+      "status": "Pending",
+      "amount": 7200,
+      "date": "2026-06-18"
+    },
+    {
+      "id": "ORD-1045",
+      "customer": "BrightPath",
+      "category": "Support",
+      "status": "Completed",
+      "amount": 5800,
+      "date": "2026-06-16"
+    },
+    {
+      "id": "ORD-1044",
+      "customer": "Vertex Systems",
+      "category": "Software",
+      "status": "Processing",
+      "amount": 11400,
+      "date": "2026-06-13"
+    },
+    {
+      "id": "ORD-1043",
+      "customer": "Orbit Works",
+      "category": "Services",
+      "status": "Completed",
+      "amount": 8300,
+      "date": "2026-06-11"
+    },
+    {
+      "id": "ORD-1042",
+      "customer": "Pioneer Media",
+      "category": "Hardware",
+      "status": "Pending",
+      "amount": 6900,
+      "date": "2026-06-08"
+    },
+    {
+      "id": "ORD-1041",
+      "customer": "Urban Foods",
+      "category": "Software",
+      "status": "Completed",
+      "amount": 10200,
+      "date": "2026-06-05"
+    }
+  ]
+}

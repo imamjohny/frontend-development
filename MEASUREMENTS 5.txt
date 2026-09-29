@@ -1,0 +1,9 @@
+Week 5 static project measurements
+data.json: 2,204 bytes
+index.html: 5,851 bytes
+app.min.js: 3,476 bytes
+styles.min.css: 5,197 bytes
+Total source bytes: 16,728
+HTML interactive controls: 7
+External runtime frameworks: 0
+JSON data source: data.json
